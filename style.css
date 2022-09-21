@@ -1,0 +1,360 @@
+    body {
+        background-color: #006d73;
+        color: white;
+        font-family: 'open-sans', 'sans serif';
+        overflow: scroll;
+        width: 1200px;
+        min-width: 300px;
+        min-height: 150px;
+    }
+    
+    p {
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    nav {
+        background-color: #006d73;
+        position: fixed;
+        width: 100%;
+        height: 175px;
+        opacity: 85%;
+        left: 0;
+        z-index: 88;
+    }
+    
+    ul {
+        margin: 10 auto;
+        padding-left: 20px;
+        max-width: 1132px;
+    }
+    /* == Level 1 == */
+    /* == Level 2 == */
+    
+    .navbar {
+        overflow: hidden;
+        background-color: rgb(37, 82, 110);
+    }
+    
+    .navbar a {
+        font-size: 16px;
+        color: white;
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .navbar img {
+        z-index: 55;
+        justify-content: space-between;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 25px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        align-content: space-between;
+        margin: 0;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: #006d73;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(125, 127, 128, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: #006d73;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #006d73;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    hover ul {
+        visibility: visible;
+        opacity: 1;
+        transition: all base-animation;
+    }
+    /* boat image */
+    
+    .boat {
+        position: absolute;
+        top: 950px;
+        left: 10px;
+        width: 120px;
+        height: 70px;
+        z-index: 79;
+        opacity: 95%;
+    }
+    
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    
+    .boat:hover {
+        animation-play-state: playing;
+        animation-direction: alternate;
+        animation-name: slidein;
+        transform: translateX(52em);
+        transition: all 1.5s ease 0.5s;
+    }
+    
+    .contact ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .logocontact {
+        margin-top: 60%;
+    }
+    
+    .contact {
+        color: rgb(93, 95, 95);
+        width: 100%;
+        background-color: #f9f9f9;
+        display: block;
+        box-sizing: border-box;
+        border: #164A41;
+        padding-top: 20px;
+        padding-left: 50px;
+        box-align: center;
+        font-size: 35px;
+        line-height: 25px;
+        text-align: center;
+        top: 10%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 100px;
+    }
+    /* Trying to add contrasting colors between text boxes */
+    
+    .space {
+        background-color: #a7afbc;
+        box-sizing: border-box;
+        display: inline-block;
+        color: white;
+        border: 6px dotted white;
+        height: 100px;
+        width: 1200px;
+    }
+    
+    #navbar {
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Open-Sans', Sans-Serif;
+        font-size: 20px;
+        padding: 0px;
+        position: fixed;
+        top: 2px;
+        z-index: 8;
+        background-color: #006d73;
+        width: 100%;
+        opacity: 60%;
+        box-shadow: 1px 4px;
+        justify-content: space-between;
+    }
+    /* links */
+    
+    a:active,
+    .question-link:active {
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        box-shadow: 1px 1px;
+        background-color: #a7afbc;
+    }
+    
+    a:hover {
+        color: white;
+        font-size: 30px;
+        transition: font-size .1;
+    }
+    /* Header text */
+    
+    h1 {
+        text-align: center;
+        font-weight: 100;
+        color: black;
+        font-size: 80px;
+        padding: 10px;
+        font-style: italic;
+        Font-Family: 'Open-Sans', Cursive;
+        letter-spacing: 8px;
+        position: absolute;
+        top: 210px;
+        right: 400px;
+        z-index: 80;
+    }
+    
+    .textbox {
+        display: block;
+        box-sizing: border-box;
+        border: #164A41;
+        -moz-box-align: center;
+        background-color: #00858d;
+        color: white;
+        top: 50px;
+        padding-top: 150px;
+        padding-left: 100px;
+        width: 90%;
+        box-align: center;
+        font-size: 28px;
+        overflow: auto;
+        line-height: 50px;
+        text-align: left;
+        margin-top: 55%;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 100px;
+    }
+    /*Sidebar info */
+    
+    h2 {
+        color: #DBAC5B;
+        padding: 10px 10px;
+        font-size: 60px;
+        text-align: center;
+        z-index: 89;
+    }
+    
+    h3 {
+        background-color: #a7afbc;
+        color: #006d73;
+        text-align: center;
+        padding: 40px 40px;
+    }
+    
+    h4 {
+        text-align: center;
+        color: #a7afbc;
+    }
+    /*Portfolio grid items */
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 200px 3fr;
+        background-color: #667181;
+        padding: 30px 25px;
+        flex-grow: 3;
+        width: 1250px;
+        grid-row-gap: 1px;
+        padding-top: 50px;
+        margin-top: 600px;
+        top: 30%;
+        justify-items: center;
+        color: #164A41;
+    }
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 20px;
+        font-size: 20px;
+        text-align: center;
+        flex-grow: 3;
+        min-width: 300px;
+        max-width: 1000px;
+        overflow: scroll;
+        overflow-x: wrap;
+        align-items: start;
+    }
+    
+    .gridsidebar {
+        overflow: wrap;
+        width: 250px;
+        flex-grow: 3;
+        padding: 20px 20px;
+        text-align: wrap;
+        font-size: 1.5rem;
+        background-color: #a7afbc;
+        grid-column-gap: 15px;
+        align-items: start;
+        grid-row-gap: 15px;
+    }
+    /*  CSS for mobile devices */
+    
+    @media only screen and (max-width: 480px),
+    (orientation: portrait) {
+        body {
+            font-size: 25px;
+            max-width: 470px
+        }
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            align-self: normal;
+            margin-top: 20px;
+            top: 30px;
+        }
+        #navbar img {
+            min-width: none;
+            max-width: 20px;
+            z-index: 100;
+            max-height: 30px;
+        }
+        background-image {
+            max-width: 480px;
+            min-height: 400px;
+            background-position: 25% 175%;
+            ;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .textbox {
+            font-size: 20px;
+            padding: 0;
+            text-align: justify;
+        }
+        .contact {
+            max-width: 400px;
+        }
+        .contact img {
+            max-width: 200px;
+        }
+        .boat {
+            top: 280px;
+            width: 10px;
+        }
+    }
+    
+    @media only screen and (min-resolution: 300dpi) {
+        /* CSS for high resolution screens load higher quality images but not for those who can't handle the res quality */
+    }
